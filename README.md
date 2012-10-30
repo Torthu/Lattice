@@ -7,6 +7,18 @@ Using percentages and "cut-off-points" Thune Grid aims to be a fully responsive 
 
 The grid is based on 16 columns, using padding for spacing between the columns and margins for offsets.
 
+Compatibility
+-------------
+
+Thune Grid uses media queries and border-box box model to create the grid.
+
+IE 9+
+Chrome
+Firefox
+Opera
+
+IE 8 supports unresponsive (base) version.
+
 Credits
 -------
 
