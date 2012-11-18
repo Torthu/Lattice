@@ -1,0 +1,290 @@
+/*
+* Thune Grid v0.5 based on Skeleton v1.2
+* Thune Grid Copyright 2012 Torstein Thune
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 27. oct. 2012
+*/
+/* Compatibility
+==================================================
+    
+    The grid is compatible with IE9+, Chrome, Firefox and Opera.
+    IE8 renders the base version, but not the responsive ones.
+
+*/
+/* Credits
+==================================================
+    
+    Thune Grid is based on Skeleton by Dave Gamache.
+    Skeleton Copyright 2011, Dave Gamache
+
+*/
+/* #Base Grid
+================================================== */
+.container {
+  position: relative;
+  width: 80%;
+  padding: 0;
+  float: right; }
+
+.container .column,
+.container .columns {
+  float: left;
+  padding: 16px;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* Base Grid */
+.container .col-1.columns {
+  width: 6.25%; }
+
+.container .col-2.columns {
+  width: 12.5%; }
+
+.container .col-3.columns {
+  width: 18.75%; }
+
+.container .col-4.columns {
+  width: 25%; }
+
+.container .col-5.columns {
+  width: 31.25%; }
+
+.container .col-6.columns {
+  width: 37.5%; }
+
+.container .col-7.columns {
+  width: 43.75%; }
+
+.container .col-8.columns {
+  width: 50%; }
+
+.container .col-9.columns {
+  width: 56.25%; }
+
+.container .col-10.columns {
+  width: 62.5%; }
+
+.container .col-11.columns {
+  width: 68.75%; }
+
+.container .col-12.columns {
+  width: 75%; }
+
+.container .col-13.columns {
+  width: 81.25%; }
+
+.container .col-14.columns {
+  width: 87.5%; }
+
+.container .col-15.columns {
+  width: 93.75%; }
+
+.container .col-16.columns {
+  width: 100%; }
+
+.container .one-third.column {
+  width: 33.33333%; }
+
+.container .two-thirds.column {
+  width: 66.66667%; }
+
+/* Offsets */
+.container .offset-by-1 {
+  margin-left: 6.25%; }
+
+.container .offset-by-2 {
+  margin-left: 12.5%; }
+
+.container .offset-by-3 {
+  margin-left: 18.75%; }
+
+.container .offset-by-4 {
+  margin-left: 25%; }
+
+.container .offset-by-5 {
+  margin-left: 31.25%; }
+
+.container .offset-by-6 {
+  margin-left: 37.5%; }
+
+.container .offset-by-7 {
+  margin-left: 43.75%; }
+
+.container .offset-by-8 {
+  margin-left: 50%; }
+
+.container .offset-by-9 {
+  margin-left: 56.25%; }
+
+.container .offset-by-10 {
+  margin-left: 62.5%; }
+
+.container .offset-by-11 {
+  margin-left: 68.75%; }
+
+.container .offset-by-12 {
+  margin-left: 75%; }
+
+.container .offset-by-13 {
+  margin-left: 81.25%; }
+
+.container .offset-by-14 {
+  margin-left: 87.5%; }
+
+.container .offset-by-15 {
+  margin-left: 93.75%; }
+
+.container .offset-by-16 {
+  margin-left: 100%; }
+
+/* #Base Grid
+================================================== */
+.row {
+  margin-bottom: 24px; }
+
+/* Nested Column Classes */
+.column.alpha, .columns.alpha {
+  padding: 0; }
+
+.column.omega, .columns.omega {
+  padding: 0; }
+
+/* #Desktop (>1300px)
+================================================== */
+@media only screen and (min-width: 1300px) and (max-width: 2599px) {
+  .container {
+    width: 1120px; } }
+/* #Laptop (<1300px)
+================================================== */
+@media only screen and (min-width: 960px) and (max-width: 1299px) {
+  .container {
+    width: 980px; } }
+/* #Tablet Landscape (<1300px)
+================================================== */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .container {
+    width: 768px; } }
+/* #Mobile (Landscape)
+================================================== */
+/* Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    width: 95%; }
+
+  .container .columns,
+  .container .column {
+    margin: 0; }
+
+  .container .one.column,
+  .container .one.columns,
+  .container .two.columns,
+  .container .three.columns,
+  .container .four.columns,
+  .container .five.columns,
+  .container .six.columns,
+  .container .seven.columns,
+  .container .eight.columns,
+  .container .nine.columns,
+  .container .ten.columns,
+  .container .eleven.columns,
+  .container .twelve.columns,
+  .container .thirteen.columns,
+  .container .fourteen.columns,
+  .container .fifteen.columns,
+  .container .sixteen.columns,
+  .container .one-third.column,
+  .container .two-thirds.column {
+    width: 100%;
+    box-sizing: border-box; } }
+/*  #Mobile (Portrait)
+    ================================================== */
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 100%; }
+
+  .container .columns,
+  .container .column {
+    margin: 0; }
+
+  .container .one.column,
+  .container .one.columns,
+  .container .two.columns,
+  .container .three.columns,
+  .container .four.columns,
+  .container .five.columns,
+  .container .six.columns,
+  .container .seven.columns,
+  .container .eight.columns,
+  .container .nine.columns,
+  .container .ten.columns,
+  .container .eleven.columns,
+  .container .twelve.columns,
+  .container .thirteen.columns,
+  .container .fourteen.columns,
+  .container .fifteen.columns,
+  .container .sixteen.columns,
+  .container .one-third.column,
+  .container .two-thirds.column {
+    width: 100%;
+    box-sizing: border-box; }
+
+  /* Offsets */
+  .container .offset-by-one,
+  .container .offset-by-two,
+  .container .offset-by-three,
+  .container .offset-by-four,
+  .container .offset-by-five,
+  .container .offset-by-six,
+  .container .offset-by-seven,
+  .container .offset-by-eight,
+  .container .offset-by-nine,
+  .container .offset-by-ten,
+  .container .offset-by-eleven,
+  .container .offset-by-twelve,
+  .container .offset-by-thirteen,
+  .container .offset-by-fourteen,
+  .container .offset-by-fifteen {
+    padding-left: 0; } }
+/* #Clearing
+================================================== */
+/* Self Clearing Goodness */
+.container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+/* Use clearfix class on parent to clear nested columns,
+or wrap each row of columns in a <div class="row"> */
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+
+.row:after,
+.clearfix:after {
+  clear: both; }
+
+.row,
+.clearfix {
+  zoom: 1; }
+
+/* You can also use a <br class="clear" /> to clear columns */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
