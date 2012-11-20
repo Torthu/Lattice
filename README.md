@@ -1,16 +1,36 @@
-Thune-Grid
-==========
+Lattice
+========
 
-A css framework for creating responsive layouts.
+A dynamic CSS framework for creating modern websites.
 
-Using percentages and "cut-off-points" Thune Grid aims to be a fully responsive grid for any websites or webapps.
+Core
+----
 
-The grid is based on 16 columns, using padding for spacing between the columns and margins for offsets.
+CSS reset and clearfix.
+
+Grid
+----
+
+Responsive CSS grid.
+
+Forms
+-----
+
+Basic styling for forms.
+
+Buttons
+-------
+
+Basic styling for buttons.
+
+Typography
+----------
+
+Basic typography styling.
+
 
 Compatibility
--------------
-
-Thune Grid uses media queries and border-box box model to create the grid.
+=============
 
 IE 9+
 Chrome
@@ -27,4 +47,4 @@ Based on Skeleton by Dave Gamache.
 Licence
 -------
 
-Thune Grid is licenced under the MIT license http://www.opensource.org/licenses/mit-license.php
+Lattice is licenced under the MIT license http://www.opensource.org/licenses/mit-license.php
