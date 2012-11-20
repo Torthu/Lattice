@@ -3,29 +3,19 @@ Lattice
 
 A dynamic CSS framework for creating modern websites.
 
-Core
-----
-
+##Core
 CSS reset and clearfix.
 
-Grid
-----
-
+##Grid
 Responsive CSS grid.
 
-Forms
------
-
+##Forms
 Basic styling for forms.
 
-Buttons
--------
-
+##Buttons
 Basic styling for buttons.
 
-Typography
-----------
-
+##Typography
 Basic typography styling.
 
 
