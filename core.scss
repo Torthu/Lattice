@@ -80,19 +80,32 @@ or wrap each row of columns in a <div class="row"> */
 
 /* #Misc
 ================================================== */
-  .remove-bottom { margin-bottom: 0 !important; }
-  .half-bottom { margin-bottom: 10px !important; }
-  .add-bottom { margin-bottom: 20px !important; }
+
   .left { float:left; }
-  .right { float: right; }
   .center { margin: 0 auto; }
-  .text_center { text-align: center; }
-  .no_padding { padding: 0 !important; }
-  .full_width { margin-left: -12px; }
-  .to_the_top { margin-top: -12px; }
-  .standard_padding { padding: 12px; }
-  .no_margin { margin:0 !important; }
-  .standard_right_margin { margin-right: 12px; }
-  .no_right_margin { margin-right: 0 !important; }
-  .no_left_margin { margin-left: 0 !important; }
+  .right { float: right; }
+
+  .text-left { text-align: left; }
+  .text-center { text-align: center; }
+  .text-right { text-align:right; }
+  
+  .standard-padding { padding: 12px; }
+
+  .no-padding { padding: 0 !important; }
+  .no-top-padding { padding-top: 0 !important; }
+  .no-right-padding { padding-right: 0 !important; }
+  .no-bottom-padding { padding-bottom: 0 !important; }
+  .no-left-padding { padding-left: 0 !important; }
+
+  .no-margin { margin:0 !important; }
+  .no-top-margin { margin-top: 0 !important; }
+  .no-right-margin { margin-right: 0 !important; }
+  .no-bottom-margin { margin-bottom: 0 !important; }
+  .no-left-margin { margin-left: 0 !important; }
+
+  .standard-margin { margin-right: 12px; }
+  
   .hidden { display: none; }
+  .block { display: block; }
+  .inline { display: inline; }
+  .inline-block { display: inline-block; }

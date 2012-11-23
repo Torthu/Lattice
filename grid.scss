@@ -57,9 +57,9 @@ $grid-width: 100%;          // default: 100% {%, px, em}
 
 $number-of-columns: 16;     // default: 16
 
-$padding: 16px;             // default: 16px (so gutter between content is 16px*2)
+$padding: 25px;             // default: 16px (so gutter between content is 16px*2)
 
-$grid-alignment: 'right';   // default: center {none, left, center, right}
+$grid-alignment: 'center';   // default: center {none, left, center, right}
 
 $column-width: $grid-width/$number-of-columns;
 
@@ -96,23 +96,26 @@ $target-retina: true;
 /* Base Grid */
 @for $i from 1 to $number-of-columns+1 {
     @if $number-of-columns <= length($numbers) {
-        .container .#{nth($numbers,$i)}.columns   { width: $column-width * $i; }
+        .#{nth($numbers,$i)}.columns, .#{nth($numbers,$i)}.column { width: $column-width * $i; }
     }
     @if $number-of-columns > length($numbers) { 
-        .container .#{c$i}.columns   { width: $column-width * $i; }
+        .#{c$i}.columns, .#{c$i}.column { width: $column-width * $i; }
     } 
 }
 
-.container .one-third.column                { width: $grid-width/3; }
-.container .two-thirds.column               { width: ($grid-width/3)*2; }
+.one-third.column { width: $grid-width/3; }
+.two-thirds.column { width: ($grid-width/3)*2; }
 
 /* Offsets */
 @for $i from 1 to $number-of-columns+1 {
     @if $number-of-columns <= length($numbers) {
-        .container .offset-by-#{nth($numbers,$i)}     { margin-left: $column-width * $i; }
+        .offset-by-#{nth($numbers,$i)}     { margin-left: $column-width * $i; }
+        .offset-right-by-#{nth($numbers,$i)}     { margin-right: $column-width * $i; }
+        .offset-top-by-#{nth($numbers,$i)} { margin-top: $padding * $i; }
+        .offset-bottom-by-#{nth($numbers,$i)} { margin-bottom: $padding * $i; }
     }
     @if $number-of-columns > length($numbers) { 
-        .container .offset-by-#{$i}     { margin-left: $column-width * $i; }
+        .offset-by-#{$i}     { margin-left: $column-width * $i; }
     } 
     
 }
@@ -129,45 +132,57 @@ $target-retina: true;
 /* #Desktop resolutions
 ================================================= */
 
-@media only screen and (min-width: 1300px) and (max-width: 2599px) {
+@media only screen and (min-width: 1025px) and (max-width: 2599px) {
+    .container {
+        width: 980px;
+    }
 
 }
 
-@for $i from 1 to length($desktop-cutoffs)+1 {
-    @media only screen and (min-width: 1300px) and (max-width: 2599px) {
-
-    }  
-}
+//@for $i from 1 to length($desktop-cutoffs)+1 {
+//    @media only screen and (min-width: 1300px) and (max-width: 2599px) {
+//
+//    }  
+//}
 
 /* #Tablet resolutions
 ================================================= */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 90%;
+    max-width: 920px;
+  }
+
+}
 
 /* #Mobile resolutions
 ================================================= */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-        .container { width: 95%; }
-        .container .columns,
-        .container .column { margin: 0; }
+@media only screen and (max-width: 767px) {
+        .container { width: 90%;padding: 5%; }
 
-        .container .one.column,
-        .container .one.columns,
-        .container .two.columns,
-        .container .three.columns,
-        .container .four.columns,
-        .container .five.columns,
-        .container .six.columns,
-        .container .seven.columns,
-        .container .eight.columns,
-        .container .nine.columns,
-        .container .ten.columns,
-        .container .eleven.columns,
-        .container .twelve.columns,
-        .container .thirteen.columns,
-        .container .fourteen.columns,
-        .container .fifteen.columns,
-        .container .sixteen.columns,
-        .container .one-third.column,
-        .container .two-thirds.column { width: 100%; box-sizing:border-box;}
+        .carousel {
+            display:none;
+        }
+
+        .one.column,
+        .one.columns,
+        .two.columns,
+        .three.columns,
+        .four.columns,
+        .five.columns,
+        .six.columns,
+        .seven.columns,
+        .eight.columns,
+        .nine.columns,
+        .ten.columns,
+        .eleven.columns,
+        .twelve.columns,
+        .thirteen.columns,
+        .fourteen.columns,
+        .fifteen.columns,
+        .sixteen.columns,
+        .one-third.column,
+        .two-thirds.column { display:block !important;width: 100%; }
     }
 
 
