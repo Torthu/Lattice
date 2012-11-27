@@ -82,8 +82,8 @@ or wrap each row of columns in a <div class="row"> */
 ================================================== */
 
   .left { float:left; }
-  .center { margin: 0 auto; }
-  .right { float: right; }
+  .center { margin: 0 auto !important; float: none !important; }
+  .right { float: right !important; }
 
   .text-left { text-align: left; }
   .text-center { text-align: center; }
@@ -108,4 +108,4 @@ or wrap each row of columns in a <div class="row"> */
   .hidden { display: none; }
   .block { display: block; }
   .inline { display: inline; }
-  .inline-block { display: inline-block; }
+  .inline-block { display: inline-block !important; float: none !important; }
