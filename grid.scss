@@ -48,7 +48,7 @@
 
 // #Dictionary to make beautiful column class names
 //==================================================
-$numbers: one,two,three,four,five,six,seven,eight,nine,ten,eleven,twelve,thirteen,forteen,fifteen,sixteen,seventeen,eighteen,nineteen,twenty,twentyone,twentytwo,twentythree,twentyfour,twentyfive,twentysix,twentyseven,twentyeight,twentynine,thirty,thirtyone,thirtytwo,thitythree,thirtyfour,thirtyfive,thirtysix,thirtyseven,thirtyeight,thirtynine,forty,fortyoe,fortytwo,fortythree,fortyfour,fortyfive,fortysix,fortyseven,fortyeight,fortynine,fifty;
+$numbers: one,two,three,four,five,six,seven,eight,nine,ten,eleven,twelve,thirteen,fourteen,fifteen,sixteen,seventeen,eighteen,nineteen,twenty,twentyone,twentytwo,twentythree,twentyfour,twentyfive,twentysix,twentyseven,twentyeight,twentynine,thirty,thirtyone,thirtytwo,thitythree,thirtyfour,thirtyfive,thirtysix,thirtyseven,thirtyeight,thirtynine,forty,fortyoe,fortytwo,fortythree,fortyfour,fortyfive,fortysix,fortyseven,fortyeight,fortynine,fifty;
 
 // #Configurations
 //==================================================
@@ -129,66 +129,101 @@ $target-retina: true;
     .column.alpha, .columns.alpha               { padding: 0; }
     .column.omega, .columns.omega               { padding: 0; }
 
-/* #Desktop resolutions
-================================================= */
 
-@media only screen and (min-width: 1025px) and (max-width: 2599px) {
-    .container {
-        width: 980px;
-    }
+/* #Desktop (>1300px)
+================================================== */
+    @media only screen and (min-width: 1300px) and (max-width: 2599px) {
+        .container { width: 1120px; }
+    } 
 
-}
-
-//@for $i from 1 to length($desktop-cutoffs)+1 {
-//    @media only screen and (min-width: 1300px) and (max-width: 2599px) {
-//
-//    }  
-//}
-
-/* #Tablet resolutions
-================================================= */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .container {
-    width: 90%;
-    max-width: 920px;
-  }
-
-}
-
-/* #Mobile resolutions
-================================================= */
-@media only screen and (max-width: 767px) {
-        .container { width: 90%;padding: 5%; }
-
-        .carousel {
-            display:none;
-        }
-
-        .one.column,
-        .one.columns,
-        .two.columns,
-        .three.columns,
-        .four.columns,
-        .five.columns,
-        .six.columns,
-        .seven.columns,
-        .eight.columns,
-        .nine.columns,
-        .ten.columns,
-        .eleven.columns,
-        .twelve.columns,
-        .thirteen.columns,
-        .fourteen.columns,
-        .fifteen.columns,
-        .sixteen.columns,
-        .one-third.column,
-        .two-thirds.column { display:block !important;width: 100%; }
-    }
-
-
+/* #Laptop (<1300px)
+================================================== */
+    @media only screen and (min-width: 960px) and (max-width: 1299px) {
+        .container { width: 980px; }
+    } 
 
 /* #Tablet Landscape (<1300px)
 ================================================== */
     @media only screen and (min-width: 768px) and (max-width: 959px) {
         .container { width: 768px; }
+    }
+
+/* #Mobile (Landscape)
+================================================== */
+
+    /* Note: Design for a width of 480px */
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        .container { width: 95%; }
+        .container .columns,
+        .container .column { margin: 0; }
+
+        .container .one.column,
+        .container .one.columns,
+        .container .two.columns,
+        .container .three.columns,
+        .container .four.columns,
+        .container .five.columns,
+        .container .six.columns,
+        .container .seven.columns,
+        .container .eight.columns,
+        .container .nine.columns,
+        .container .ten.columns,
+        .container .eleven.columns,
+        .container .twelve.columns,
+        .container .thirteen.columns,
+        .container .fourteen.columns,
+        .container .fifteen.columns,
+        .container .sixteen.columns,
+        .container .one-third.column,
+        .container .two-thirds.column { width: 100%; box-sizing:border-box;} /* box-sizing breaks IE 8 < compatibility */
+    }
+
+/*  #Mobile (Portrait)
+    ================================================== */
+
+    @media only screen and (max-width: 767px) {
+
+        .container { width: 100%; }
+
+        .container .columns,
+        .container .column { margin: 0; }
+
+        .container .one.column,
+        .container .one.columns,
+        .container .two.columns,
+        .container .three.columns,
+        .container .four.columns,
+        .container .five.columns,
+        .container .six.columns,
+        .container .seven.columns,
+        .container .eight.columns,
+        .container .nine.columns,
+        .container .ten.columns,
+        .container .eleven.columns,
+        .container .twelve.columns,
+        .container .thirteen.columns,
+        .container .fourteen.columns,
+        .container .fifteen.columns,
+        .container .sixteen.columns,
+        .container .one-third.column,
+        .container .two-thirds.column  { width: 100%;box-sizing:border-box;} /* box-sizing breaks IE 8 < compatibility */
+
+        /* Offsets */
+        .container .offset-by-one,
+        .container .offset-by-two,
+        .container .offset-by-three,
+        .container .offset-by-four,
+        .container .offset-by-five,
+        .container .offset-by-six,
+        .container .offset-by-seven,
+        .container .offset-by-eight,
+        .container .offset-by-nine,
+        .container .offset-by-ten,
+        .container .offset-by-eleven,
+        .container .offset-by-twelve,
+        .container .offset-by-thirteen,
+        .container .offset-by-fourteen,
+        .container .offset-by-fifteen { padding-left: 0; }
+
     }
