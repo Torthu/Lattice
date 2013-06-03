@@ -127,3 +127,13 @@ or wrap each row of columns in a <div class="row"> */
   .clear-right {
     clear: right;
   }
+
+  .uppercase {
+    text-transform: uppercase;
+  }
+  .lowercase {
+    text-transform: lowercase;
+  }
+  .capitalise {
+    text-transform: capitalize;
+  }
